@@ -11,7 +11,33 @@ title: Past Projects
 font-family:verdana;
 font-size: 80%;
 } 
-</style>
+
+.collapsible {
+  background-color: #95A5A6 ;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #717D7E;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  border-radius: 10px
+}
+
 
 <div class="blurb">
 	<h1>Past Projects</h1>
@@ -19,8 +45,8 @@ font-size: 80%;
 		Here, I list several research projects I have completed in the past. So you can read into more details about them compared to the short version in my <a href="/projects/cv_4.pdf">CV</a>.
 	</p> 
 	
-	<div class="project"> 
-	<h2> Opinion Dynamics </h2>
+	<button class="collapsible">Opinion Dynamics</button>
+	<div class="content">
 	<p> 
 		This is my undergraduate research project. I was intrigued by the sense of surprise after the 2016 UK-EU Referendum result, and decided to seek for a mathematical explanation for this volatile opinion shift. I used an agent-based modelling framework, and applied statistics mechanics to describe the dynamics of opinion influence among individuals. 
 	</p>
@@ -33,8 +59,8 @@ font-size: 80%;
 		To learn more, you can find my my report <a href="/projects/M3R Final.pdf">here</a> and a presentation <a href="/projects/Presentation for SAE.pdf">here</a>.
 </p> </div> 
 	
-	<div class="project"> 
-	<h2> Complex Systems Modelling to Simulate Mangrove Ecosystem </h2>
+	<button class="collapsible">Complex Systems Modelling to Simulate Mangrove Ecosystem </button>
+	<div class="content">
 		<p>
 			After leaving my job in June, 2018, I completed a research project at the MIT Media Lab. The research topic is developing a complex systems modelling approach to study the coastal mangrove ecosystem in Rio de Janeiro, which is under two-sided threats from landward urban expansion pressure and seaward sea-level rise pressure. We developed a multi-agent computational model to capture various risk factors from: urban areas, agriculture areas, the sea, transportation. Illustrated below is a logic map identifying the interactions among agent types and a summary of computational steps to simulate the growth (or loss) of mangrove forests. This project serves as a prototype to develop tools for urban planning, which can intake both environmental and social factors. Our collaborators include mangrove biologists and urban planning officials from Rio. </p> 
 		

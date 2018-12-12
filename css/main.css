@@ -29,6 +29,11 @@ h2 {
     font-family:'Verdana','Helvetica', 'Arial', 'Sans-Serif';
     color: #424242
 }
+h3 {
+    font-size: 1.5em;
+    font-family:'Verdana','Helvetica', 'Arial', 'Sans-Serif';
+    color: #424242
+}
 
 p {
     font-size: 1.2em;

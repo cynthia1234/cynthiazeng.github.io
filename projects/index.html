@@ -56,11 +56,19 @@ font-family:verdana;
 		This is my undergraduate research project. I was intrigued by the sense of surprise after the 2016 UK-EU Referendum result, and decided to seek for a mathematical explanation for this volatile opinion shift. I used an agent-based modelling framework, and applied statistics mechanics to describe the dynamics of opinion influence among individuals. 
 	</p>
 	<p> 
-		The model assumes that some of the individuals are more stubborn than others regarding political viewpoints, that they are unlikely to change their mind. Therefore, we separate our agents into: open-minded and stubborn ones, each holding initially an opinion: A or B. We let agents interact and update opinions according to certain rules.
-	</p>
-		<p> As an example  <MATH>&int;_a_^b^{f(x)<over>1+x} dx</MATH> </p> 
-	<p>
-		This model allows one to study how does the initial composition of agents (such as the level of stubborn agents, and the initial opinion allocatin) lead to different opinion evolvement, and hence to different voting outcomes. One social implication is that Populism can spread minority opinions effectively. Another application of this model is to forecast election outcome using polling data. 
+		The model assumes that some of the individuals are more stubborn than others regarding political viewpoints, that they are unlikely to change their mind. Therefore, we separate our agents into: open-minded and stubborn ones, each holding initially an opinion: A or B. We let the group interact according to some rules and study how stubborn-agents alter the opinion formation dynamics. </p> 
+		
+		<p> In particular, at every time step, we perform the following three steps: </p>
+		<ol>
+			<li> Randomly distribute agents into small subgroups of size r.
+     			<li> Open-minded agents update to local majority within the subgroup, stubborn agents unchanged</li>
+    			 <li>Reshuffle</li>
+		</ol>
+		
+		<p> This model aims to reflect the information exchange behaviour and people's different degree of flexibility when influenced by others. The stubborn agents essentially function as "influencers" because they only contrbute to influencing others but do not ever change their mind. Mathematically, if we assume the group size is large enough, we can describe the support for opinion A (i.e. number of agents supporting A) at each time step using statistical mechanics. </p> 
+	
+		<p>
+		The mathematical model allows one to study how does the initial composition of agents (such as the level of stubborn agents, and the initial opinion allocatin) lead to different opinion evolvement, and hence to different voting outcomes. A surprising result is that in some cases, stubborn agents can entirely determine the direction of opinion formation. In addition, reducing the subgroup size can enhance such "stubborn effect", suggesting the internet contribute to opinion manipulation in our current society, implying the danger of Populism. As an application, this model can be applied to forecast election outcome using polling data because it can capture the trend of the opinion formation. </p> 
         <p>
 		To learn more, you can find my my report <a href="/projects/M3R Final.pdf">here</a> and a presentation <a href="/projects/Presentation for SAE.pdf">here</a>.
 </p> </div> 

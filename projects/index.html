@@ -58,12 +58,13 @@ font-family:verdana;
 	<p> 
 		The model assumes that some of the individuals are more stubborn than others regarding political viewpoints, that they are unlikely to change their mind. Therefore, we separate our agents into: open-minded and stubborn ones, each holding initially an opinion: A or B. We let the group interact according to some rules and study how stubborn-agents alter the opinion formation dynamics. </p> 
 		
-		<p> In particular, at every time step, we perform the following three steps: </p>
-		<ol>
+		<p> In particular, at every time step, we perform the following three steps:
+			<ol> 
 			<li> Randomly distribute agents into small subgroups of size r.
      			<li> Open-minded agents update to local majority within the subgroup, stubborn agents unchanged</li>
     			 <li>Reshuffle</li>
-		</ol>
+			</ol>
+		</p> 
 		
 		<p> This model aims to reflect the information exchange behaviour and people's different degree of flexibility when influenced by others. The stubborn agents essentially function as "influencers" because they only contrbute to influencing others but do not ever change their mind. Mathematically, if we assume the group size is large enough, we can describe the support for opinion A (i.e. number of agents supporting A) at each time step using statistical mechanics. </p> 
 	
